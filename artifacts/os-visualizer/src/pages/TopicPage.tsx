@@ -47,6 +47,13 @@ import { RAGViz } from "@/components/visualizations/RAGViz";
 import { DeadlockFormationViz } from "@/components/visualizations/DeadlockFormationViz";
 import { BankersAlgorithmViz } from "@/components/visualizations/BankersAlgorithmViz";
 import { DeadlockPreventionViz } from "@/components/visualizations/DeadlockPreventionViz";
+import { MemoryIntroViz } from "@/components/visualizations/MemoryIntroViz";
+import { MemoryLayoutViz } from "@/components/visualizations/MemoryLayoutViz";
+import { ContiguousAllocationViz } from "@/components/visualizations/ContiguousAllocationViz";
+import { FragmentationViz } from "@/components/visualizations/FragmentationViz";
+import { CompactionViz } from "@/components/visualizations/CompactionViz";
+import { AllocationStrategiesViz } from "@/components/visualizations/AllocationStrategiesViz";
+import { SwappingViz } from "@/components/visualizations/SwappingViz";
 
 const allData = {
   ...introToOsData,
@@ -117,6 +124,14 @@ export default function TopicPage() {
   if (topicId === "deadlock-formation") visualizer = <DeadlockFormationViz />;
   if (topicId === "bankers-algorithm") visualizer = <BankersAlgorithmViz />;
   if (topicId === "deadlock-prevention") visualizer = <DeadlockPreventionViz />;
+
+  if (topicId === "main-memory") visualizer = <MemoryIntroViz />;
+  if (topicId === "memory-layout") visualizer = <MemoryLayoutViz />;
+  if (topicId === "contiguous-allocation") visualizer = <ContiguousAllocationViz />;
+  if (topicId === "fragmentation") visualizer = <FragmentationViz />;
+  if (topicId === "compaction") visualizer = <CompactionViz />;
+  if (topicId === "allocation-strategies") visualizer = <AllocationStrategiesViz />;
+  if (topicId === "swapping") visualizer = <SwappingViz />;
 
   return (
     <Layout>

@@ -89,9 +89,15 @@ export const topicsMeta: TopicMeta[] = [
     id: 'memory-management',
     title: 'Memory Management',
     category: 'memory-management',
-    description: 'Explore main memory, swapping, contiguous allocation, and paging.',
+    description: 'Explore main memory, contiguous allocation, fragmentation, compaction, allocation strategies, and swapping.',
     subtopics: [
-      { id: 'main-memory', title: 'Main Memory Basics (Coming Soon)' }
+      { id: 'main-memory', title: 'Introduction to Memory Management' },
+      { id: 'memory-layout', title: 'Memory Layout & Process Loading' },
+      { id: 'contiguous-allocation', title: 'Contiguous Memory Allocation' },
+      { id: 'fragmentation', title: 'Fragmentation — Internal & External' },
+      { id: 'compaction', title: 'Compaction & Memory Reorganization' },
+      { id: 'allocation-strategies', title: 'Memory Allocation Strategies' },
+      { id: 'swapping', title: 'Swapping' },
     ]
   },
   {
