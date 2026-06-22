@@ -54,6 +54,13 @@ import { FragmentationViz } from "@/components/visualizations/FragmentationViz";
 import { CompactionViz } from "@/components/visualizations/CompactionViz";
 import { AllocationStrategiesViz } from "@/components/visualizations/AllocationStrategiesViz";
 import { SwappingViz } from "@/components/visualizations/SwappingViz";
+import { VmIntroViz } from "@/components/visualizations/VmIntroViz";
+import { LogicalPhysicalViz } from "@/components/visualizations/LogicalPhysicalViz";
+import { MmuTranslationViz } from "@/components/visualizations/MmuTranslationViz";
+import { DemandPagingViz } from "@/components/visualizations/DemandPagingViz";
+import { PageFaultViz } from "@/components/visualizations/PageFaultViz";
+import { ThrashingViz } from "@/components/visualizations/ThrashingViz";
+import { WorkingSetViz } from "@/components/visualizations/WorkingSetViz";
 
 const allData = {
   ...introToOsData,
@@ -132,6 +139,14 @@ export default function TopicPage() {
   if (topicId === "compaction") visualizer = <CompactionViz />;
   if (topicId === "allocation-strategies") visualizer = <AllocationStrategiesViz />;
   if (topicId === "swapping") visualizer = <SwappingViz />;
+
+  if (topicId === "vm-intro") visualizer = <VmIntroViz />;
+  if (topicId === "logical-physical") visualizer = <LogicalPhysicalViz />;
+  if (topicId === "mmu-translation") visualizer = <MmuTranslationViz />;
+  if (topicId === "demand-paging") visualizer = <DemandPagingViz />;
+  if (topicId === "page-fault") visualizer = <PageFaultViz />;
+  if (topicId === "thrashing") visualizer = <ThrashingViz />;
+  if (topicId === "working-set") visualizer = <WorkingSetViz />;
 
   return (
     <Layout>

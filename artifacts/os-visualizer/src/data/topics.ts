@@ -106,7 +106,13 @@ export const topicsMeta: TopicMeta[] = [
     category: 'virtual-memory',
     description: 'Dive into demand paging, page replacement algorithms, and thrashing.',
     subtopics: [
-      { id: 'demand-paging', title: 'Demand Paging (Coming Soon)' }
+      { id: 'vm-intro', title: 'Introduction to Virtual Memory' },
+      { id: 'logical-physical', title: 'Logical vs Physical Address' },
+      { id: 'mmu-translation', title: 'MMU & Address Translation Simulator' },
+      { id: 'demand-paging', title: 'Demand Paging' },
+      { id: 'page-fault', title: 'Page Fault Simulator' },
+      { id: 'thrashing', title: 'Thrashing' },
+      { id: 'working-set', title: 'Working Set & VM Playground' },
     ]
   },
   {
