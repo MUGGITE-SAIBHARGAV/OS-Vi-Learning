@@ -1,7 +1,4 @@
 {
-  "buildCommand": "pnpm --filter @workspace/os-visualizer run build",
-  "outputDirectory": "artifacts/os-visualizer/dist/public",
-  "installCommand": "pnpm install",
   "routes": [
     { "handle": "filesystem" },
     { "src": "/(.*)", "dest": "/index.html" }
