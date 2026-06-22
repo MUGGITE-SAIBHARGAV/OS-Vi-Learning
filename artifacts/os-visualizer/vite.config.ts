@@ -39,13 +39,13 @@ export default defineConfig({
     rollupOptions: {
       onwarn(warning, warn) {
         if (warning.code === "SOURCEMAP_ERROR") return;
+        if (warning.code === "CIRCULAR_DEPENDENCY") return;
         warn(warning);
       },
       output: {
         manualChunks: {
           vendor: ["react", "react-dom"],
-          motion: ["framer-motion"],
-          ui: ["lucide-react", "@radix-ui/react-tabs", "@radix-ui/react-accordion", "@radix-ui/react-slider"],
+          ui: ["framer-motion", "lucide-react", "@radix-ui/react-tabs", "@radix-ui/react-accordion", "@radix-ui/react-slider"],
         },
       },
     },
