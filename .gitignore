@@ -3,8 +3,7 @@ dist
 tmp
 out-tsc
 *.tsbuildinfo
-.expo
-.expo-shared
+
 
 # Dependencies
 node_modules
@@ -17,11 +16,7 @@ node_modules
 *.launch
 .settings/
 *.sublime-workspace
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+
 
 # Misc
 /.sass-cache
@@ -42,3 +37,4 @@ Thumbs.db
 
 # Uploaded/temporary assets
 attached_assets/
+artifacts/
